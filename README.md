@@ -1,15 +1,21 @@
 # Final_Project
 Predicting Airplane Delays due to Weather
-This project aims to predict delays in domestic U.S. flights due to weather conditions. By building machine learning models, this tool assists in providing valuable insights to customers during flight bookings on the likelihood of delays.
+The priorities of the project play a major role in selecting one of the two approaches. The linear model works well for monitoring that is explainable or occurs in real time. Notwithstanding its greater resource requirements, XGBoost provides more powerful capabilities for in-depth, predictive analytics to find patterns and correlations in wy
+ater quality.
 
-Project Overview
-This project includes:
+Forecasting Weather-Related Aircraft Delays
+The goal of this research is to forecast weather-related delays on domestic flights in the United States. This technique helps to give clients useful information about the possibility of delays when booking flights by creating machine learning models.
 
-Data processing and exploratory data analysis (EDA) for delay prediction.
-Building baseline and advanced machine learning models (logistic regression and XGBoost).
-Comparative performance analysis between the models.
-Dataset
-The dataset contains U.S. domestic flight details between 2014 and 2018, provided by the Bureau of Transportation Statistics.
+Overview of the Project
+This project consists of:
+
+For delay prediction, data processing and exploratory data analysis (EDA) are used.
+constructing both basic and sophisticated machine learning models (XGBoost and logistic regression).
+examination of the models' relative performances.
+The dataset
+The Bureau of Transportation Statistics provides the dataset, which includes information on domestic flights in the United States from 2014 to 2018.
+
+
 
 Installation and Setup
 Prerequisites
@@ -27,23 +33,23 @@ Download the dataset from the provided links and extract all compressed files.
 Place the downloaded data files in the data/ folder within your project directory.
 Running the Notebook:
 
-Open a Jupyter Notebook instance and upload the provided notebook.
-Update the file paths in the notebook to reference your local directories.
-Run each cell sequentially, ensuring that data loading, preprocessing, and model training steps complete successfully.
-Model Training and Evaluation:
+Upload the given notebook to a Jupyter Notebook instance.
+Change the notebook's file paths to point to your local folders.
+Make sure that the data loading, preprocessing, and model training processes are finished by running each cell one after the other.
+Training and Assessing Models:
 
-The notebook first trains a logistic regression model as a baseline.
-Then, using XGBoost, it builds an ensemble model for comparative performance.
-Check the output in the notebook cells for model performance metrics such as accuracy, precision, recall, and F1-score.
+As a baseline, the notebook initially trains a logistic regression model.
+It then creates an ensemble model for comparison performance using XGBoost.
+Look for model performance indicators like accuracy, precision, recall, and F1-score in the notebook cells.
 Deploying the Model:
 
-If running on SageMaker, host the trained models on SageMaker endpoints.
-Perform batch transformations on the test data to evaluate model performance on the hosted instance.
-Comparison of Models:
+The trained models should be hosted on SageMaker endpoints if the system is using SageMaker.
+To assess model performance on the hosted instance, run batch transformations on the test data.
+Model Comparison:
 
-Analyze the model outputs to understand differences in the performance metrics between the linear and XGBoost models.
-Running the Code on Different Machines
-Set Relative Paths:
-All paths for data files and model storage should be relative (e.g., data/combined_csv_v1.csv).
-Environment Configuration:
-Ensure the code is executed in an environment with at least 25 GB of memory if working on large datasets.
+Examine the model outputs to determine how the XGBoost and linear models differ in terms of performance metrics.
+Executing the Code on Various Computers
+Establish Relative Paths:
+Every path used to store data files and models should be relative (data/combined_csv_v1.csv, for example).
+Configuring the Environment: If working with huge datasets, make sure the code runs in an environment with at least 25 GB of memory.
+
